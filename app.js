@@ -10,3 +10,12 @@ function waterLife(id,mode){
 }
 waterLife('hero-waterlife','hero');waterLife('lagoon-life','lagoon');
 
+// Sombras de caiaques atravessam a água em camadas, para sugerir passeios ao redor da página.
+document.body.insertAdjacentHTML('beforeend','<div class="kayak-shadows" aria-hidden="true"><i class="kayak-shadow-real one"></i><i class="kayak-shadow-real two"></i><i class="kayak-shadow-real three"></i></div>');
+
+// O polvo muda de área conforme a pessoa percorre o conteúdo, como se estivesse explorando cada trecho.
+const octopus=document.querySelector('.octopus-crawler');
+const octoStops=[['#inicio','60vh','3vw'],['#experiencia','30vh','4vw'],['.underwater-split','66vh','74vw'],['#passeio','38vh','3vw'],['#localizacao','62vh','76vw'],['.final-cta','30vh','4vw']];
+function moveOctopus(){if(!octopus)return;let best=octoStops[0],distance=Infinity;octoStops.forEach(stop=>{const el=document.querySelector(stop[0]);if(!el)return;const rect=el.getBoundingClientRect(),d=Math.abs(rect.top+rect.height/2-innerHeight/2);if(d<distance){distance=d;best=stop}});octopus.style.top=best[1];octopus.style.right=best[2];octopus.classList.toggle('scared',distance<80)}
+moveOctopus();addEventListener('scroll',moveOctopus,{passive:true});addEventListener('resize',moveOctopus);
+
