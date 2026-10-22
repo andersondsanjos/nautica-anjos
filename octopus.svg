@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 460" role="img" aria-label="Polvo coral">
+  <defs>
+    <radialGradient id="skin" cx="34%" cy="24%" r="72%"><stop stop-color="#ffb786"/><stop offset=".34" stop-color="#f2774e"/><stop offset=".76" stop-color="#c63c39"/><stop offset="1" stop-color="#742440"/></radialGradient>
+    <linearGradient id="arm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff956b"/><stop offset=".55" stop-color="#cf4142"/><stop offset="1" stop-color="#7e2541"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <g fill="url(#arm)" stroke="#742440" stroke-width="5" stroke-linecap="round">
+    <path d="M177 269C130 340 65 359 44 423c-8 23 15 36 32 19 38-40 53-78 128-110"/>
+    <path d="M193 276C163 358 119 397 121 443c1 22 27 24 38 2 21-43 28-82 68-129"/>
+    <path d="M218 279c13 76 4 121 32 158 14 19 42 3 29-19-23-40-21-77-27-143"/>
+    <path d="M243 270c47 61 92 73 115 133 8 23-16 35-33 15-29-37-51-58-105-99"/>
+    <path d="M165 266C94 292 49 283 13 315c-19 17-3 43 20 32 41-20 67-16 142-45"/>
+    <path d="M253 259c60 15 104 1 145 30 20 15 7 40-18 33-45-13-67-6-134-31"/>
+  </g>
+  <ellipse cx="210" cy="191" rx="123" ry="116" fill="url(#skin)" stroke="#742440" stroke-width="7"/>
+  <g fill="#ffca98" opacity=".45"><circle cx="132" cy="120" r="12"/><circle cx="171" cy="91" r="7"/><circle cx="262" cy="119" r="14"/><circle cx="291" cy="165" r="8"/><circle cx="140" cy="190" r="8"/><circle cx="234" cy="76" r="6"/></g>
+  <g fill="#fff7df" stroke="#742440" stroke-width="6"><ellipse cx="164" cy="165" rx="31" ry="38"/><ellipse cx="254" cy="165" rx="31" ry="38"/></g>
+  <g fill="#09223b"><ellipse cx="166" cy="171" rx="12" ry="20"/><ellipse cx="252" cy="171" rx="12" ry="20"/></g>
+  <g fill="#fff"><circle cx="170" cy="163" r="4"/><circle cx="256" cy="163" r="4"/></g>
+  <path d="M183 224c17 15 37 15 54 0" fill="none" stroke="#742440" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#ffe6bd" opacity=".8"><circle cx="151" cy="306" r="7"/><circle cx="123" cy="329" r="6"/><circle cx="204" cy="340" r="6"/><circle cx="255" cy="333" r="7"/><circle cx="299" cy="309" r="6"/></g>
+  <ellipse cx="210" cy="245" rx="85" ry="12" fill="#001b38" opacity=".18" filter="url(#glow)"/>
+</svg>
+
