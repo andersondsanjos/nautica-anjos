@@ -18,3 +18,6 @@ const octopus=document.querySelector('.octopus-crawler');const reef=document.que
 // Sombras passam somente pela área do mar, por baixo do conteúdo.
 document.querySelectorAll('.hero,.underwater-split,.final-cta').forEach((section,index)=>{const layer=document.createElement('div');layer.className='kayak-water-shadows';layer.setAttribute('aria-hidden','true');layer.innerHTML='<i></i><i></i>';section.append(layer);});
 
+// Atalho de revisão visual; não interfere na navegação normal do visitante.
+if(new URLSearchParams(location.search).get('scene')==='underwater')document.querySelector('.underwater-split')?.scrollIntoView();
+
