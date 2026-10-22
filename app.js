@@ -12,6 +12,7 @@ waterLife('hero-waterlife','hero');waterLife('lagoon-life','lagoon');
 
 // Sombras de caiaques atravessam a água em camadas, para sugerir passeios ao redor da página.
 document.body.insertAdjacentHTML('beforeend','<div class="kayak-shadows" aria-hidden="true"><i class="kayak-shadow-real one"></i><i class="kayak-shadow-real two"></i><i class="kayak-shadow-real three"></i></div>');
+document.body.insertAdjacentHTML('beforeend','<div class="real-school" aria-hidden="true"><img class="yellow" src="fish-yellow.png" alt=""><img class="blue" src="fish-blue.png" alt=""><img class="silver" src="fish-silver.png" alt=""></div>');
 
 // O polvo muda de área conforme a pessoa percorre o conteúdo, como se estivesse explorando cada trecho.
 const octopus=document.querySelector('.octopus-crawler');
